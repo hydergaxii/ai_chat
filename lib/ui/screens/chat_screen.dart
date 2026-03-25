@@ -24,6 +24,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
   final _searchCtrl = TextEditingController();
   bool _showSearch = false;
   bool _showScrollFab = false;
+  // ignore: unused_field
   String _searchQuery = '';
   int _searchIdx = -1;
   List<int> _searchHits = [];

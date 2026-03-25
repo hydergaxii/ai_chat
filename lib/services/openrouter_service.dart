@@ -2,7 +2,6 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import '../data/models/message.dart';
-import '../data/models/attachment.dart';
 import 'ai_service.dart';
 
 const _baseUrl = 'https://openrouter.ai/api/v1/chat/completions';

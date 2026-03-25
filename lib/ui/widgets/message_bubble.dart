@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:flutter_highlight/themes/github.dart';
-import 'package:photo_view/photo_view.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../data/models/message.dart';
 import '../../data/models/attachment.dart';
@@ -266,7 +264,8 @@ class _SyntaxHighlightBuilder extends MarkdownElementBuilder {
   @override
   Widget? visitElementAfter(element, TextStyle? preferredStyle) {
     final code = element.textContent;
-    final lang = element.attributes['class']
+    final _lang = // ignore: unused_local_variable
+    element.attributes['class']
             ?.replaceFirst('language-', '') ??
         '';
 
